@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings Welcome Screem -->
+    <string name="button_join">Unete a tus amigos</string>
+    <string name="button_new_game">Crear un nuevo juego</string>
+</resources>

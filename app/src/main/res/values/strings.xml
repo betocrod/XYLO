@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">XYLO</string>
+
+    <!-- Application name -->
+    <string name="app_name" translatable="false">XYLO</string>
+
+    <!-- Strings Welcome Screem -->
+    <string name="title_app" translatable="false">Xylo</string>
+    <string name="button_join">Join your friends</string>
+    <string name="button_new_game">Create a new game</string>
+
+
 </resources>
