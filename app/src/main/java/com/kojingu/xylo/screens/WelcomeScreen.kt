@@ -4,7 +4,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
-import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -23,18 +22,14 @@ fun WelcomeScreen() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Title()
-        Buttons(
-            onJoinClick = {},
-            onNewGameClick = {}
-        )
+        Buttons(onJoinClick = {}, onNewGameClick = {})
     }
 }
 
 @Composable
 fun Title() {
     Surface(
-        color = Color.Transparent,
-        modifier = Modifier.padding(bottom = 160.dp, top = 170.dp)
+        color = Color.Transparent, modifier = Modifier.padding(bottom = 160.dp, top = 170.dp)
     ) {
         Text(
             text = stringResource(R.string.title_app),
@@ -46,8 +41,7 @@ fun Title() {
 
 @Composable
 fun Buttons(
-    onJoinClick: () -> Unit,
-    onNewGameClick: () -> Unit
+    onJoinClick: () -> Unit, onNewGameClick: () -> Unit
 ) {
     Column(
         modifier = Modifier.padding(top = 145.dp)
@@ -59,17 +53,15 @@ fun Buttons(
             modifier = Modifier.padding(bottom = 18.dp)
         ) {
             Text(
-                text = stringResource(R.string.button_join),
-                color = Color.White
-                )
+                text = stringResource(R.string.button_join), color = Color.White
+            )
         }
         OutlinedButton(
             onClick = { onNewGameClick() }, contentPadding = PaddingValues(18.dp)
         ) {
             Text(
-                text = stringResource(R.string.button_new_game),
-                color = Mainbluestate
-                )
+                text = stringResource(R.string.button_new_game), color = Mainbluestate
+            )
         }
     }
 }
@@ -83,9 +75,6 @@ private fun PreviewTitle() {
 @Preview
 @Composable
 private fun PreviewButtons() {
-    Buttons(
-        onJoinClick = {},
-        onNewGameClick = {}
-    )
+    Buttons(onJoinClick = {}, onNewGameClick = {})
 }
 

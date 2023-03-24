@@ -6,6 +6,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.R
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -28,18 +30,19 @@ fun JoinFriend() {
             Spacer(modifier = Modifier.weight(1f))
             SearchBar(modifier = Modifier)
             Spacer(modifier = Modifier.weight(1f))
-            ButtonScreen()
+            ButtonScreen(
+                onButtonJoin = {}
+            )
         }
     }
 }
-
 @Composable
 fun TitleScreen(modifier: Modifier = Modifier) {
     Surface(
         modifier = Modifier.padding(top = 20.dp)
     ) {
     Text(
-        text = "Xylo",
+        text = stringResource(com.kojingu.xylo.R.string.title_screen),
         modifier = modifier,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp
@@ -56,14 +59,18 @@ fun SearchBar(
         value = state,
         onValueChange = { state = it },
         modifier = modifier,
-        placeholder = { Text(text = "Enter the game code from your friend...")},
+        placeholder = { Text(text = stringResource(com.kojingu.xylo.R.string.search_bar))},
         singleLine = true
     )
 
 }
 
 @Composable
-fun ButtonScreen(modifier: Modifier = Modifier) {
+fun ButtonScreen(
+    onButtonJoin: () -> Unit,
+    modifier: Modifier = Modifier
+)
+{
     Surface(
         modifier = Modifier.padding(bottom = 40.dp)
     ) {
@@ -71,10 +78,10 @@ fun ButtonScreen(modifier: Modifier = Modifier) {
         colors = ButtonDefaults.buttonColors(backgroundColor = Mainbluestate) ,
         modifier = Modifier.padding(bottom = 18.dp),
         contentPadding = PaddingValues(horizontal = 50.dp, vertical = 12.5.dp),
-        onClick = { /*TODO*/ }) {
+        onClick = { onButtonJoin() }) {
         Text(
-            text = "Join!",
-            color = Color.Whigit
+            text = stringResource(com.kojingu.xylo.R.string.button_join_screem),
+            color = Color.White
         )
      }
     }
