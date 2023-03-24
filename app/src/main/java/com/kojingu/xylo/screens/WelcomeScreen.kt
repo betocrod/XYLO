@@ -3,10 +3,8 @@ package com.kojingu.xylo.screens
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Button
-import androidx.compose.material.OutlinedButton
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
+import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -17,11 +15,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kojingu.xylo.R
+import com.kojingu.xylo.ui.theme.Mainbluestate
 
 @Composable
 fun WelcomeScreen() {
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Title()
         Buttons(
@@ -54,16 +53,23 @@ fun Buttons(
         modifier = Modifier.padding(top = 145.dp)
     ) {
         Button(
+            colors = ButtonDefaults.buttonColors(backgroundColor = Mainbluestate),
             onClick = { onJoinClick() },
             contentPadding = PaddingValues(horizontal = 24.5.dp, vertical = 18.dp),
             modifier = Modifier.padding(bottom = 18.dp)
         ) {
-            Text(text = stringResource(R.string.button_join))
+            Text(
+                text = stringResource(R.string.button_join),
+                color = Color.White
+                )
         }
         OutlinedButton(
             onClick = { onNewGameClick() }, contentPadding = PaddingValues(18.dp)
         ) {
-            Text(text = stringResource(R.string.button_new_game))
+            Text(
+                text = stringResource(R.string.button_new_game),
+                color = Mainbluestate
+                )
         }
     }
 }
