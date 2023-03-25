@@ -7,6 +7,7 @@
     <string name="title_app" translatable="false">Xylo</string>
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
+    <string name="enter_your_nickname">Enter you nickname...</string>
 
 
 </resources>
