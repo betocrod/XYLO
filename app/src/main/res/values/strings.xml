@@ -8,5 +8,11 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Strings Code Screen -->
+    <string name="titulo_code_screen" translatable="false">Xylo</string>
+    <string name="greeting_code_screen">Hi %s, your friends will be able to join you using the game code we have generated for you.</string>
+    <string name="generated_code">This is your game code!</string>
+    <string name="list_users">%s has joined</string>
+    <string name="button_code_screen">ARE YOU READY?</string>
 
 </resources>
