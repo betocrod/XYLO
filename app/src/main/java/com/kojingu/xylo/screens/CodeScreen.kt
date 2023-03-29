@@ -103,7 +103,7 @@ fun YourCode( code: String ){
 fun ListUsers(userList: List<String>){
     for (names in userList) {
         Text(
-            text = stringResource(id = R.string.list_users, userList),
+            text = stringResource(id = R.string.list_users, names),
             fontSize = 20.sp
         )
     }
