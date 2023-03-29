@@ -8,5 +8,9 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Strings Nickname Screen -->
+    <string name="title_nickname_screen" translatable="false">Xylo</string>
+    <string name="search_nickname_screen">Enter your nickname…</string>
+    <string name="button_nickname_screen">Let\'s go!</string>
 
 </resources>
