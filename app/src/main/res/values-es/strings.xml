@@ -4,4 +4,5 @@
     <!-- Strings Welcome Screem -->
     <string name="button_join">Unete a tus amigos</string>
     <string name="button_new_game">Crear un nuevo juego</string>
+    <string name="text_standby_screen">%s está creando n/ una melodia para ti n/ n/ ¡Estar listo!</string>
 </resources>

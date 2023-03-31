@@ -8,5 +8,9 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Strings Standby Screen -->
+    <string name="title_standby_screen" translatable="false">Xylo</string>
+    <string name="text_standby_screen"> %s is creating \n a melody for you \n \n Be ready!</string>
+
 
 </resources>
