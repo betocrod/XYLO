@@ -4,4 +4,6 @@
     <!-- Strings Welcome Screem -->
     <string name="button_join">Unete a tus amigos</string>
     <string name="button_new_game">Crear un nuevo juego</string>
+    <string name="text_your_melody">Desafía a tus amigos con una canción al azar!</string>
+    <string name="button_your_melody">¡Que comiencen los juegos del hambre!</string>
 </resources>

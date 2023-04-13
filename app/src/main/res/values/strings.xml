@@ -8,5 +8,9 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Create Your Melody Screem -->
+    <string name="title_your_melody" translatable="false">Xylo</string>
+    <string name="text_your_melody">Challenge your friends with a random song!</string>
+    <string name="button_your_melody">Let the hunger games begin!</string>
 
 </resources>
