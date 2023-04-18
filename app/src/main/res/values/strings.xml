@@ -8,6 +8,11 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Strings Nickname Screen -->
+    <string name="title_nickname_screen" translatable="false">Xylo</string>
+    <string name="search_nickname_screen">Enter your nickname…</string>
+    <string name="button_nickname_screen">Let\'s go!</string>
+
     <!-- Strings Code Screen -->
     <string name="titulo_code_screen" translatable="false">Xylo</string>
     <string name="greeting_code_screen">Hi %s, your friends will be able to join you using the game code we have generated for you.</string>

@@ -4,6 +4,8 @@
     <!-- Strings Welcome Screem -->
     <string name="button_join">Unete a tus amigos</string>
     <string name="button_new_game">Crear un nuevo juego</string>
+    <string name="search_nickname_screen">Ingresa tu alias…</string>
+    <string name="button_nickname_screen">¡Vamos!</string>
     <string name="greeting_code_screen">Hola %s, tus amigos podrán unirse a ti utilizando el código de juego que hemos generado para ti.</string>
     <string name="generated_code">¡Este es tu código de juego!</string>
     <string name="list_users">%s se ha unido</string>
