@@ -1,11 +1,11 @@
-
-package com.kojingu.xylo.screens
+package main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.kojingu.xylo.screens.WelcomeScreen
 import com.kojingu.xylo.ui.theme.XYLOTheme
 
 class MainActivity : ComponentActivity() {
