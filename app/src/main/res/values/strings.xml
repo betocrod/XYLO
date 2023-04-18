@@ -7,6 +7,12 @@
     <string name="title_app" translatable="false">Xylo</string>
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
+    <string name="enter_your_nickname">Enter you nickname...</string>
+
+    <!-- Strings Welcome Screem -->
+    <string name="title_create_game" translatable="false">Xylo</string>
+    <string name="search_create_game">"How many rounds?"</string>
+    <string name="button_create_game">"Let's go!"</string>
 
     <!-- Strings Join Friends -->
     <string name="title_screen" translatable="false">Xylo</string>
