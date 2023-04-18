@@ -4,4 +4,6 @@
     <!-- Strings Welcome Screem -->
     <string name="button_join">Unete a tus amigos</string>
     <string name="button_new_game">Crear un nuevo juego</string>
+    <string name="search_bar">Ingresa el codigo de tu amigo…</string>
+    <string name="button_join_screem">Unete!</string>
 </resources>

@@ -8,5 +8,9 @@
     <string name="button_join">Join your friends</string>
     <string name="button_new_game">Create a new game</string>
 
+    <!-- Strings Join Friends -->
+    <string name="title_screen" translatable="false">Xylo</string>
+    <string name="search_bar" >Enter the game code from your friend…</string>
+    <string name="button_join_screem">Join!</string>
 
 </resources>
