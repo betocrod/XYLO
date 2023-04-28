@@ -37,5 +37,6 @@
     <string name="title_screen" translatable="false">Xylo</string>
     <string name="search_bar" >Enter the game code from your friend…</string>
     <string name="button_join_screem">Join!</string>
+    <string name="enter_your_nickname">Enter you nick…</string>
 
 </resources>
