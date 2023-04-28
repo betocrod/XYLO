@@ -7,4 +7,5 @@ import androidx.compose.runtime.setValue
 class StandbyViewModel {
     var name by mutableStateOf("")
         private set
+
 }
