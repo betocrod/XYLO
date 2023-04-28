@@ -13,8 +13,8 @@ fun CreateGameScreen(
     viewModel:CreateGameViewModel
 ){
     CreateGameScreen(
-        nickname = "",
-        rounds = "",
+        nickname = viewModel.nickName,
+        rounds = viewModel.rounds,
         onNicknameChange = { viewModel.queryNickname(it) },
         onRoundsChange = { viewModel.queryRounds(it) })
 }
@@ -22,7 +22,7 @@ fun CreateGameScreen(
 fun CreateGameScreen(
     nickname: String,
     onNicknameChange: (String) -> Unit,
-    rounds: String,
+    rounds: Int,
     onRoundsChange: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -50,8 +50,8 @@ fun CreateGameScreen(
 @Preview(showSystemUi = true)
 private fun Preview(){
     CreateGameScreen(
-        nickname = "",
-        rounds = "",
+        nickname = "Reno",
+        rounds = 0,
         onNicknameChange = {},
         onRoundsChange = {})
 }

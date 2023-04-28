@@ -15,7 +15,7 @@ fun SearchCreateGame(
     enterNickname: String,
     onNicknameChanged: (nickname: String) -> Unit,
     modifier: Modifier = Modifier,
-    enterRounds: String,
+    enterRounds: Int,
     onRoundsChanged: (rounds: String) -> Unit
 
 ){
@@ -29,7 +29,7 @@ fun SearchCreateGame(
         )
 
         OutlinedTextField(
-            value = enterRounds,
+            value = enterRounds.toString(),
             onValueChange = { onRoundsChanged(it) },
             singleLine = true,
             placeholder = { Text(text = stringResource(id = R.string.search_create_game)) }

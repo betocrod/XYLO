@@ -10,86 +10,79 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.kojingu.xylo.data.KeyNote
 import com.kojingu.xylo.ui.theme.*
 
 @Composable
 fun ButtonsYourMelody(
     modifier: Modifier = Modifier,
-    onKeyClick: () -> Unit
+    onKeyClick: (KeyNote) -> Unit
 ) {
     KeyButton(
-        text = "C",
-        color = RedGame,
+        keyNote = KeyNote.C,
         contentPadding = PaddingValues(horizontal = 170.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
     KeyButton(
-        text = "D",
-        color = OrangeGame,
+        keyNote = KeyNote.D,
         contentPadding = PaddingValues(horizontal = 165.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
     KeyButton(
-        text = "E",
-        color = YellowGame,
+        keyNote = KeyNote.E,
         contentPadding = PaddingValues(horizontal = 160.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
     KeyButton(
-        text = "F",
-        color = GreenGame,
+        keyNote = KeyNote.F,
         contentPadding = PaddingValues(horizontal = 155.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
     KeyButton(
-        text = "G",
-        color = SkyBlueGame,
+        keyNote = KeyNote.G,
         contentPadding = PaddingValues(horizontal = 150.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
     KeyButton(
-        text = "A",
-        color = Mainbluestate,
+        keyNote = KeyNote.A,
         contentPadding = PaddingValues(horizontal = 145.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
     KeyButton(
-        text = "B",
-        color = PurpleGame,
+        keyNote = KeyNote.B,
         contentPadding = PaddingValues(horizontal = 140.dp, vertical = 12.5.dp),
         modifier = modifier.padding(4.5.dp),
-        onClick = { onKeyClick() }
+        onClick = { onKeyClick(it) }
     )
 
 }
 
 @Composable
 private fun KeyButton(
-    text: String,
-    color: Color,
+    keyNote: KeyNote,
     contentPadding: PaddingValues,
     modifier: Modifier = Modifier,
-    onClick: () -> Unit = {}
+    onClick: (KeyNote) -> Unit = {}
 ) {
     Button(
         modifier = modifier,
-        onClick = onClick,
+        onClick = { onClick(keyNote) },
         contentPadding = contentPadding,
-        colors = ButtonDefaults.buttonColors(backgroundColor = color)
+        colors = ButtonDefaults.buttonColors(backgroundColor = keyNote.color)
     ) {
         Text(
-            text = text, fontSize = 18.sp, color = Color.White
+            text = keyNote.name, fontSize = 18.sp, color = Color.White
         )
     }
 }

@@ -2,6 +2,7 @@ package com.kojingu.xylo.createyourmelody
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -13,6 +14,17 @@ fun CreateYourMelodyScreen(
     modifier: Modifier = Modifier,
     viewModel: CreateYourMelodyViewModel
 ) {
+    CreateYourMelodyScreen(
+        onClick = { viewModel.addKey(it) },
+        modifier = modifier
+    )
+}
+
+@Composable
+fun CreateYourMelodyScreen(
+    onClick: (KeyNote) -> Unit,
+    modifier: Modifier = Modifier
+) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -20,7 +32,7 @@ fun CreateYourMelodyScreen(
         TextYourMelody()
         Spacer(modifier = modifier.weight(1f))
         ButtonsYourMelody(
-            onKeyClick = { viewModel.addKey() }
+            onKeyClick = { onClick(it) }
         )
         Spacer(modifier = modifier.weight(1f))
         ButtonYourMelody()
@@ -28,9 +40,9 @@ fun CreateYourMelodyScreen(
     }
 }
 
+
 @Preview(showSystemUi = true)
 @Composable
 fun Preview() {
-    CreateYourMelodyScreen()
-    KeyNote.B
+    CreateYourMelodyScreen(onClick = {}, Modifier.fillMaxSize())
 }
